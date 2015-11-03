@@ -1,0 +1,75 @@
+<resources>
+    <declare-styleable name="RippleView">
+        <!--文字属性-->
+        <attr name="text" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+
+        <!--按钮颜色-->
+        <attr name="buttonColor" format="reference|color"/>
+        <!--按钮半径-->
+        <attr name="buttonRadius" format="dimension"/>
+        <!-- 第一个动画数据-->
+        <attr name="rippleInnerAnimationColor" format="reference|color"/>
+        <attr name="rippleInnerAnimationRadius" format="dimension"/>
+        <attr name="rippleInnerAnimationColorGradientStart" format="reference|color"/>
+        <attr name="rippleInnerAnimationColorGradientEnd" format="reference|color"/>
+        <!-- 第二个动画数据-->
+        <attr name="rippleOuterAnimationRadius" format="dimension"/>
+        <attr name="rippleOuterAnimationColor" format="reference|color"/>
+        <attr name="rippleOuterAnimationColorGradientStart" format="reference|color"/>
+        <attr name="rippleOuterAnimationColorGradientEnd" format="reference|color"/>
+        <!-- 动画持续时间,毫秒-->
+        <attr name="animationDuraction" format="integer"/>
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="TunaRipple">
+        <attr name="tunaRippleInnerCircleRadius" format="dimension"/>
+        <attr name="tunaRippleInnerCircleColor" format="reference|color"/>
+        <attr name="tunaRippleOuterCircleColor" format="reference|color"/>
+        <attr name="tunaRippleTextSize" format="dimension"/>
+        <attr name="tunaRippleTextColor" format="reference|color"/>
+        <attr name="tunaRippleTextValue" format="string"/>
+        <attr name="tunaRippleTextDx" format="dimension"/>
+        <attr name="tunaRippleTextDy" format="dimension"/>
+        <attr name="tunaRippleTextFractionDx" format="fraction"/>
+        <attr name="tunaRippleTextFractionDy" format="fraction"/>
+
+        <attr name="tunaRippleDuraction" format="integer"/>
+
+         <attr name="tunaRippleInnerCircleAngle" format="integer"/>
+         <attr name="tunaRippleOuterCircleAngle" format="integer"/>
+
+        <attr name="tunaRippleInnerCircleColorGradientStart" format="reference|color"/>
+        <attr name="tunaRippleInnerCircleColorGradientEnd" format="reference|color"/>
+
+        <attr name="tunaRippleOuterCircleColorGradientStart" format="reference|color"/>
+        <attr name="tunaRippleOuterCircleColorGradientEnd" format="reference|color"/>
+
+        <attr name="tunaRippleTimeInterpolator">
+            <!-- In the animation begins and ends where the rate of change is relatively slow, accelerate the time in the middle -->
+            <enum name="accelerateDecelerateInterpolator" value="0"/>
+            <!-- Animation begins at the local rate of change is relatively slow, and then began to accelerate -->
+            <enum name="accelerateInterpolator" value="1"/>
+            <!-- Initially thrown forward and then backward -->
+            <enum name="anticipateInterpolator" value="2"/>
+            <!-- At the beginning of the return value after a certain value thrown forward and then backward -->
+            <enum name="anticipateOvershootInterpolator" value="3"/>
+            <!-- When the animation ends bounce -->
+            <enum name="bounceInterpolator" value="4"/>
+            <!-- The number of times a particular animation loop, velocity change along a sine curve -->
+            <enum name="cycleInterpolator" value="5"/>
+            <!-- Fast and slow at the beginning of the local animation -->
+            <enum name="decelerateInterpolator" value="6"/>
+            <!-- In a constant rate of change -->
+            <enum name="linearInterpolator" value="7"/>
+            <!-- Thrown forward certain value and then return to its original position -->
+            <enum name="overshootInterpolator" value="8"/>
+        </attr>
+
+
+    </declare-styleable>
+</resources>
